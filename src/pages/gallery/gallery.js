@@ -1,9 +1,9 @@
-import '../../style.scss';
+/*import '../../style.scss';
 
 console.log('about us');
 
 
 const app = document.getElementById('app') as HTMLDivElement
 
-app.innerHTML = /* html */ `
-    <h2>About Us</h2>`
+app.innerHTML = /* html  `
+    <h2>About Us</h2>`*/
