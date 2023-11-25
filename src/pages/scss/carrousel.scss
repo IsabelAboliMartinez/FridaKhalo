@@ -1,5 +1,5 @@
 body {
-	background: #181818;
+	background: purple;
 	text-align: center;
 	position: relative;
 }
@@ -19,11 +19,9 @@ body {
 	transition: transform 0.3s ease;
 }
 .card {
-	font-family: sans-serif;
-	line-height: 12em;
 	width: 8em;
 	height: 12em;
-	background: white;
+	background: red;
 	border-radius: 2px;
 	box-shadow: 0 0 20px 4px rgba(0,0,0,0.4);
 	display: inline-block;
@@ -32,13 +30,13 @@ body {
 	bottom: -1.2em;
 	transition: transform 0.3s ease, box-shadow 0.2s ease;
 	&:hover {
-		background: #E2E2E2;
 		box-shadow: 0 0 20px 8px rgba(0,0,0,0.4);
 	}
 }
 
 .card[data-scale="0"],
 .card[data-scale="4"] {
+	background-color: aqua;
 	transform: scale(1);
 	z-index: 0;
 }
