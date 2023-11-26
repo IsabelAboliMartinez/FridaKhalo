@@ -1,10 +1,11 @@
 body {
-	background: purple;
+	background-image: url(../../assets/fridaGallery/1954B.jpg);
 	text-align: center;
 	position: relative;
 }
 
 .container {
+	background-color:purple;
 	position: relative;
 	white-space: nowrap;
 	overflow-x: hidden;
@@ -15,13 +16,14 @@ body {
 	transform: translateY((-0.6 * 12em));
 }
 .inner {
+	background-color: black;
 	position: absolute;
 	transition: transform 0.3s ease;
 }
 .card {
+	background-color: chartreuse;
 	width: 8em;
 	height: 12em;
-	background: red;
 	border-radius: 2px;
 	box-shadow: 0 0 20px 4px rgba(0,0,0,0.4);
 	display: inline-block;
@@ -32,6 +34,10 @@ body {
 	&:hover {
 		box-shadow: 0 0 20px 8px rgba(0,0,0,0.4);
 	}
+}
+
+#foto1 {
+	background-color: url(../../assets/fotosFrida/Infancia024aFG.jpg);
 }
 
 .card[data-scale="0"],
@@ -59,7 +65,7 @@ body {
 	line-height: 100vh;
 	
 	svg {
-		fill: white;
+		fill: yellow;
 		width: 3em;
 		height: 3em;
 	}
