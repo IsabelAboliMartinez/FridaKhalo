@@ -1,11 +1,17 @@
 body {
-	background-image: url(../../assets/fridaGallery/1954B.jpg);
+	/*background-image: url(../../assets/fridaGallery/1954B.jpg);*/
 	text-align: center;
 	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+h1{
+	text-decoration: darkolivegreen;
 }
 
 .container {
-	background-color:purple;
+	/*background-color:rgb(180, 104, 180);*/
 	position: relative;
 	white-space: nowrap;
 	overflow-x: hidden;
@@ -16,12 +22,10 @@ body {
 	transform: translateY((-0.6 * 12em));
 }
 .inner {
-	background-color: black;
 	position: absolute;
 	transition: transform 0.3s ease;
 }
 .card {
-	background-color: chartreuse;
 	width: 8em;
 	height: 12em;
 	border-radius: 2px;
@@ -36,13 +40,39 @@ body {
 	}
 }
 
-#foto1 {
-	background-color: url(../../assets/fotosFrida/Infancia024aFG.jpg);
+div #foto1 {
+	background-image: url(../../assets/fotosFrida/Infancia024aFG.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+div #foto2 {
+	background-image: url(../../assets/fotosFrida/Solos001a.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+div #foto3 {
+	background-image: url(../../assets/fotosFrida/60.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+div #foto4 {
+	background-image: url(../../assets/fotosFrida/IMG_9273.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+div #foto5 {
+	background-image: url(../../assets/fotosFrida/de-Frida032.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 .card[data-scale="0"],
+	
 .card[data-scale="4"] {
-	background-color: aqua;
 	transform: scale(1);
 	z-index: 0;
 }
@@ -65,7 +95,7 @@ body {
 	line-height: 100vh;
 	
 	svg {
-		fill: yellow;
+		fill: black;
 		width: 3em;
 		height: 3em;
 	}
