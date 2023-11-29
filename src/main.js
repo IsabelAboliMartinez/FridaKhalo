@@ -1,4 +1,4 @@
-import './style.scss'
+import './style.scss';
 
 let scale = 0;
 const cards = Array.from(document.getElementsByClassName("card"));

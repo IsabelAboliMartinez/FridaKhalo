@@ -15,9 +15,9 @@ h1{
 	position: relative;
 	white-space: nowrap;
 	overflow-x: hidden;
-	height: (1.2 * 12em);
+	height: (1.2 * 20em);
 	width: 41.5em;
-	top: 50vh;
+	top: 30vh;
 	margin: auto;
 	transform: translateY((-0.6 * 12em));
 }
@@ -109,3 +109,52 @@ div #foto5 {
 		background: rgba(255,255,255,0.2);
 	}
 }
+
+
+@media screen and (max-width: 767px) {
+	body {
+		background-color: blue;
+		height: auto;
+		width: auto;
+		text-align: center;
+	}
+
+	.container {
+		/*background-color:rgb(180, 104, 180);*/
+		position: absolute;
+		white-space: nowrap;
+		overflow-x: hidden;
+		height: (1.2 * 10em);
+		width: 41.5em;
+		top: 20vh;
+		margin: auto;
+		transform: translateY((-0.6 * 12em));
+	}
+	.inner {
+		position: absolute;
+		transition: transform 0.3s ease;
+	}
+	.card {
+		width: 4em;
+		height: 6em;
+		border-radius: 1px;
+		box-shadow: 0 0 10px 2px rgba(0,0,0,0.4);
+		display: inline-block;
+		margin: 0 0.02em;
+		position: relative;
+		bottom: -1.2em;
+		transition: transform 0.3s ease, box-shadow 0.2s ease;
+	}
+
+	.btn {
+		position: absolute;
+		background: none;
+		padding: 0;
+		line-height: normal;
+	}
+	.btn svg {
+		width: 2em;
+		height: 2em;
+	}
+}
+
