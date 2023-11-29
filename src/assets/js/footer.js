@@ -1,12 +1,11 @@
-import '../sass/footer.scss';
+import "../sass/footer.scss";
 import FridaKhaloLogoBlack from "../icons/frida-khalo-logo-black.webp";
 import facebook from "../icons/Facebook.png";
 import github from "../icons/git-hub.png";
 import instagram from "../icons/Instagram.png";
 import tiktok from "../icons/tiktok.png";
 
-document.getElementById('footer').innerHTML = `
-  <footer>
+document.getElementById("footer").innerHTML = `
     <section>
       <ul>
         <li id="subtitle">Servicio</li>
@@ -36,5 +35,4 @@ document.getElementById('footer').innerHTML = `
       <li>Política de privacidad</li>
       <li>Política de cookies</li>
     </section>
-  </footer>
 `;

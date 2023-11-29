@@ -1,38 +1,81 @@
-footer {
-    background-color: #FFF9F9;
-    > section {
+#footer {
+  padding-top: 2em;
+  background-color: #fff9f9;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  color: grey;
+  > section {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    > ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      > ul {
         display: flex;
+        align-items: center;
         justify-content: space-around;
-        list-style: none;
-        > ul {
-            margin: 3em 0 3em 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            >ul {
-                >a{
-                   margin: 0 15px; 
-                }
-            }
-            >li{
-                padding: 10px;
-            }
-            >img {
-                margin-bottom: 20px;
-                width: 100px;
-            }
+        padding: 1em;
+        flex-wrap: wrap;
+        gap: 2em;
+        a {
+          > img {
+            height: 3em;
+          }
         }
+      }
+      > li {
+        padding: 10px;
+      }
+      > img {
+        margin-bottom: 20px;
+        width: 4em;
+      }
     }
-}
-#subtitle {
-    font-weight: bolder;
+  }
 }
 #copyright {
-    padding: 20px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  li {
+    padding: 2em;
+  }
 }
 #about-us {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding: 0 15%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0 10%;
+}
+#subtitle {
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 700px) {
+  #footer ul > ul {
+    flex-direction: column;
+  }
+  #copyright {
+    font-size: 0.9em;
+    li {
+      padding: 2em 1em;
+    }
+  }
+}
+@media screen and (max-width: 510px) {
+  #copyright {
+    li {
+      padding: 1em 3em;
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  #copyright {
+    li {
+      padding: 1em 6em;
+    }
+  }
 }
