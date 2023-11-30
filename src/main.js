@@ -20,7 +20,7 @@ function slideAndScale() {
 (function init() {
 	slideAndScale();
 	cards.map((card, i) => {
-		card.textContent = i;
+		card.textContent = " ";
 		card.addEventListener("click", () => {
 			const id = card.getAttribute("data-scale");
 			if (id !== 2) {
