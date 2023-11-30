@@ -1,22 +1,22 @@
 body {
-	/*background-image: url(../../assets/fridaGallery/1954B.jpg);*/
+	background-color: rgb(246, 232, 246);
+	height: 100%;
+	width: 100%;
 	text-align: center;
-	position: relative;
-	background-size: cover;
-	background-position: center;
 }
 
 h1{
+	text-align: center;
 	text-decoration: darkolivegreen;
 }
 
 .container {
-	/*background-color:rgb(180, 104, 180);*/
 	position: relative;
+	align-items: center;
 	white-space: nowrap;
 	overflow-x: hidden;
 	height: (1.2 * 20em);
-	width: 41.5em;
+	width: 51.5em;
 	top: 30vh;
 	margin: auto;
 	transform: translateY((-0.6 * 12em));
@@ -87,7 +87,7 @@ div #foto5 {
 }
 
 .btn {
-	position: absolute;
+	position: relative;
 	top: 0;
 	cursor: pointer;
 	background: rgba(255,255,255,0.1);
@@ -96,14 +96,14 @@ div #foto5 {
 	
 	svg {
 		fill: black;
-		width: 3em;
-		height: 3em;
+		width: 2em;
+		height: 2em;
 	}
 	&.next {
-		right: 0;
+		right: 1%;
 	}
 	&.prev {
-		left: 0;
+		left: 1%;
 	}
 	&:hover {
 		background: rgba(255,255,255,0.2);
@@ -113,15 +113,25 @@ div #foto5 {
 
 @media screen and (max-width: 767px) {
 	body {
-		background-color: blue;
-		height: auto;
-		width: auto;
+		background-color: rgb(246, 232, 246);
+		height: 100%;
+		width: 100%;
 		text-align: center;
 	}
 
+	.carrusel {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items:start;
+	}
+
 	.container {
-		/*background-color:rgb(180, 104, 180);*/
-		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
 		white-space: nowrap;
 		overflow-x: hidden;
 		height: (1.2 * 10em);
@@ -129,14 +139,15 @@ div #foto5 {
 		top: 20vh;
 		margin: auto;
 		transform: translateY((-0.6 * 12em));
+		
 	}
 	.inner {
-		position: absolute;
+		position: relative;
 		transition: transform 0.3s ease;
 	}
 	.card {
-		width: 4em;
-		height: 6em;
+		width: 5em;
+		height: 8em;
 		border-radius: 1px;
 		box-shadow: 0 0 10px 2px rgba(0,0,0,0.4);
 		display: inline-block;
@@ -144,17 +155,33 @@ div #foto5 {
 		position: relative;
 		bottom: -1.2em;
 		transition: transform 0.3s ease, box-shadow 0.2s ease;
+		&:hover {
+			box-shadow: 0 0 20px 8px rgba(0,0,0,0.4);
+		}
 	}
 
 	.btn {
-		position: absolute;
-		background: none;
+		position: relative;
+		/*top: 0;*/
+		cursor: pointer;
+		background: rgba(255,255,255,0.1);
 		padding: 0;
 		line-height: normal;
-	}
-	.btn svg {
-		width: 2em;
-		height: 2em;
+		
+		svg {
+			fill: black;
+			width: 1em;
+			height: 1em;
+		}
+		&.next {
+			right: 5%;
+		}
+		&.prev {
+			left: 5%;
+		}
+		&:hover {
+			background: rgba(255,255,255,0.2);
+		}
 	}
 }
 
