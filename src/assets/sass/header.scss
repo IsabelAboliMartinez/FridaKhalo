@@ -1,0 +1,141 @@
+#header {
+  background-color: #c26267;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 0.8em;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+
+    > ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      list-style: none;
+      font-weight: bolder;
+      background-color: #c26267;
+      width: 40%;
+
+      > a {
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        color: white;
+        padding: 0 1em;
+
+        > li {
+          padding: 1em;
+        }
+      }
+      > a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 0.1em;
+        background: white;
+        transition: left 0.3s;
+      }
+      > a:hover:after {
+        left: 0;
+      }
+    }
+
+    > div {
+      > img {
+        width: 8em;
+      }
+    }
+  }
+}
+
+#language-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+      width: 1em;
+      margin-right: 0.1em;
+    }
+  }
+
+  ul {
+    visibility: hidden;
+    position: absolute;
+    top: 3em;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    transform: scaleY(1.2);
+    display: flex;
+    flex-direction: column;
+  }
+}
+#language-dropdown:hover {
+  ul {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+#language-option {
+  padding: 1em;
+}
+
+.language {
+  background-color: #ffffff;
+  filter: drop-shadow(2px 5px 4px #dadada);
+  color: #4f4f4f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 7em;
+  border-radius: 10px;
+  li {
+    padding: 1em;
+    width: 100%;
+  }
+  li:hover {
+    background-color: #dfdfdf;
+  }
+}
+
+#spanish {
+  border-radius: 10px 10px 0 0;
+}
+#english {
+  border-radius: 0 0 10px 10px;
+}
+#downArrow {
+  width: 1em;
+}
+
+@media screen and (max-width: 891px) {
+  #header ul {
+    gap: 1em;
+    a {
+      width: 100px;
+      padding: 0 0;
+
+      > li {
+        width: 100%;
+        padding: 0 0;
+      }
+    }
+  }
+  #contact-size {
+    font-size: small;
+  }
+}
