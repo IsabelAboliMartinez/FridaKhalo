@@ -18,7 +18,7 @@ body {
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items:start;
-}
+
 
 .container {
 	position: relative;
@@ -53,31 +53,31 @@ body {
 }
 
 div #foto1 {
-	background-image: url(../../assets/fotosFrida/Infancia024aFG.jpg);
+	background-image: url(../../assets/fotosFrida-carruselHome/foto1.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 div #foto2 {
-	background-image: url(../../assets/fotosFrida/1bebf21a93f0b38b7eae24db30b369f6-cke.webp);
+	background-image: url(../../assets/fotosFrida-carruselHome/foto2.webp);
 	background-size: cover;
 	background-position: center;
 }
 
 div #foto3 {
-	background-image: url(../../assets/fotosFrida/60.jpg);
+	background-image: url(../../assets/fotosFrida-carruselHome/foto3.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 div #foto4 {
-	background-image: url(../../assets/fotosFrida/225b80a2dcc072067a6b03d58f75a027.jpg);
+	background-image: url(../../assets/fotosFrida-carruselHome/foto5.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 div #foto5 {
-	background-image: url(../../assets/fotosFrida/de-Frida032.jpg);
+	background-image: url(../../assets/fotosFrida-carruselHome/foto6.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -125,12 +125,13 @@ div #foto5 {
 .btn {
 	position: absolute;
 	top: 0;
+	height: 100%;
 	cursor: pointer;
 	background: rgba(255,255,255,0.1);
-	margin-top: 800px;
+	margin-top:60%;
 	padding: 0 2em;
 	line-height: 100vh;
-	transition: background 0.3s ease;
+	
 	svg {
 		fill: rgb(134, 21, 136);
 		width: 3em;
@@ -146,7 +147,7 @@ div #foto5 {
 		background: rgba(255,255,255,0.2);
 	}
 }
-
+}
 
 @media screen and (max-width: 767px) {
 	body {
