@@ -1,0 +1,58 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+a {
+    color: darkolivegreen;
+    text-decoration-line: none;
+    text-decoration:complement($color: rgb(0, 0, 0));
+}
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+    font-size: 1em;
+    color: darkolivegreen;
+}
+.frida {
+    height: 50%;
+    margin-left: 5%;
+    text-align: start;
+}
+.diego {
+    height: 50%;
+    margin-right: 5%;
+    text-align: end;
+    
+}
+.mapa {
+    height: 100%;
+    margin:10%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenMapa {
+    height: 80%;
+    width: 70%;
+    justify-content: center;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 767px){
+    .enlaces {
+        font-size: 2em;
+    }
+    /*.imagenMapa {
+        height: 500px;
+        width: 800px;
+        
+    }*/
+
+    
+}

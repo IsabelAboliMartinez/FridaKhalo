@@ -1,0 +1,250 @@
+body {
+	background-color: rgb(170, 204, 206);
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.tittle {
+	text-align: center;
+	margin-top: 10%;
+	font-size: 5em;
+	color: darkolivegreen;
+}
+
+.carrusel {
+	width: 100%;
+	height: 580px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items:start;
+	margin-bottom: 0%;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	overflow-x: hidden;
+	height: (1.2 * 30em);
+	width: 70em;
+	top: 15vh;
+	margin: auto;
+	transform: translateY((-0.6 * 12em));
+}
+.inner {
+	position: absolute;
+	transition: transform 0.3s ease;
+}
+.card {
+	width: 13em;
+	height: 20em;
+	border-radius: 2px;
+	box-shadow: 0 0 20px 4px rgba(0,0,0,0.4);
+	display: inline-block;
+	margin: 0 0.05em;
+	margin-bottom: 3%;
+	position: relative;
+	bottom: -1.2em;
+	transition: transform 0.3s ease, box-shadow 0.2s ease;
+	&:hover {
+		box-shadow: 0 0 20px 8px rgba(0,0,0,0.4);
+	}
+}
+
+div #casaAzul1 {
+	background-image: url(../../../assets/laCasaAzul/4b5b7fb0f663a187f020795da21c4d3d.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+div #casaAzul2 {
+	background-image: url(../../../assets/laCasaAzul/5D332ED8-77BD-4450-96F6-BCF853E4441F-1440x1920.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+div #casaAzul3 {
+	background-image: url(../../../assets/laCasaAzul/443B_FRIDA_KAHLO_PAINTINGS_XL_01189.webp);
+	background-size: cover;
+	background-position: center;
+}
+
+div #casaAzul4 {
+	background-image: url(../../../assets/laCasaAzul/foto.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+div #casaAzul5 {
+	background-image: url(../../../assets/laCasaAzul/7350a935c745b7bfbd297c70c1771105.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.card[data-scale="0"],
+	
+.card[data-scale="4"] {
+	transform: scale(1);
+	z-index: 0;
+}
+.card[data-scale="1"],
+.card[data-scale="3"] {
+	transform: scale(1.1);
+	z-index: 1;
+}
+.card[data-scale="2"] {
+	transform: scale(1.2);
+	z-index: 2;
+}
+
+/*.btn {
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	background: rgba(255,255,255,0.1);
+	padding: 0 2em;
+	line-height: normal;
+	
+	svg {
+		fill: black;
+		width: 2em;
+		height: 2em;
+	}
+	&.next {
+		right: 1%;
+	}
+	&.prev {
+		left: 1%;
+	}
+	&:hover {
+		background: rgba(255,255,255,0.2);
+	}
+}*/
+
+.btn {
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	background: rgba(255,255,255,0.1);
+	margin-top: 10%;
+	padding: 0 2em;
+	line-height: 100vh;
+	transition: background 0.3s ease;
+	svg {
+		fill: rgb(134, 21, 136);
+		width: 3em;
+		height: 3em;
+	}
+	&.next {
+		right: 0;
+	}
+	&.prev {
+		left: 0;
+	}
+	&:hover {
+		background: rgba(255,255,255,0.2);
+	}
+}
+.text {
+	height: 100%;
+	display:flex;
+ 	align-items: center;
+ 	flex-direction: column;
+ 	justify-content: center;
+    text-align: center;
+    margin: 5%;
+    font-size: 1.7em;
+	color:darkolivegreen;
+
+}
+
+
+@media screen and (max-width: 767px) {
+	body {
+		height: 100%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.tittle {
+		text-align: center;
+		font-size: 2em;
+		color: darkolivegreen;
+	}
+
+	.carrusel {
+		width: 100%;
+		height: 300px;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items:start;
+		margin-bottom: 0%;
+	}
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		white-space: nowrap;
+		overflow-x: hidden;
+		height: (1.2 * 10em);
+		width: 41.5em;
+		top: 12vh;
+		margin: auto;
+		margin-bottom: 0%;
+		transform: translateY((-0.6 * 12em));
+		
+	}
+	.inner {
+		position: relative;
+		transition: transform 0.3s ease;
+	}
+	.card {
+		width: 5em;
+		height: 8em;
+		border-radius: 2px;
+		border-color:black;
+		box-shadow: 0 0 10px 2px rgba(0,0,0,0.4);
+		display: inline-block;
+		margin: 0 0.02em;
+		position: relative;
+		bottom: -1.2em;
+		transition: transform 0.3s ease, box-shadow 0.2s ease;
+		&:hover {
+			box-shadow: 0 0 20px 8px rgba(0,0,0,0.4);
+		}
+	}
+
+	.btn {
+		position: relative;
+		margin-top: 0;
+		cursor: pointer;
+		background: rgba(255,255,255,0.1);
+		padding: 0;
+		line-height: normal;
+		
+		svg {
+			fill: black;
+			width: 1em;
+			height: 1em;
+		}
+		&.next {
+			right: 5%;
+		}
+		&.prev {
+			left: 5%;
+		}
+		&:hover {
+			background: rgba(255,255,255,0.2);
+		}
+	}
+	 .text {
+		font-size: 0.8em;
+	 }
+}
