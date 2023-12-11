@@ -1,2 +1,2 @@
-import '../../main';
-    
+import "../../main.js";
+import "./videos-container.js";
