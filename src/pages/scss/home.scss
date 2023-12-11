@@ -1,2 +1,6 @@
-@use './carrousel.scss';
-@use './banner.scss';
+@use "./carrousel.scss";
+@use "./banner.scss";
+
+* {
+  font-family: "Poppins", sans-serif;
+}

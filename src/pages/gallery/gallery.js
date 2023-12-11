@@ -1,5 +1,5 @@
+import "./scss/gallery.scss";
 import "../../main.js";
-
 /*(function($) {
     $.fn.timeline = function() {
     var selectors = {
