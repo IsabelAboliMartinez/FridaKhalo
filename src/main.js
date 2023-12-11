@@ -1,7 +1,8 @@
 import "./style.scss";
+import "../src/pages/videos/videos.js";
 import "../src/assets/js/header.js";
 import "../src/assets/js/footer.js";
-import "../src/pages/videos/videos.js";
+
 let scale = 0;
 const cards = Array.from(document.getElementsByClassName("card"));
 const inner = document.querySelector(".inner");
